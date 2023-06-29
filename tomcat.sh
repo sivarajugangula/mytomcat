@@ -1,7 +1,8 @@
 sudo apt update 
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.tar.gz
 sudo tar -xvzf apache-tomcat-9.0.76.tar.gz
-sudo mv apache-tomcat-9.0.76 /opt/tomcat9/
+sudo mv apache-tomcat-9.0.76 tomcat9
+sudo mv tomcat9 /opt/
 sudo useradd -M -d /opt/tomcat9/ tomcat
 sudo  chown -R tomcat.tomcat /opt/tomcat9/ 
 sudo apt install default-jdk -y
